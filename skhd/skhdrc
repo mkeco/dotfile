@@ -53,9 +53,12 @@ ctrl + alt - l : yabai -m window --warp east
 
 
 # move window to prev and next space
-# shift + alt - p : yabai -m window --space prev;
-# shift + alt - n : yabai -m window --space next;
+ctrl + alt - p : yabai -m space --focus prev | yabai -m window --space prev 
 
+
+# Focus next space by mission-control index
+
+ctrl + alt - n : yabai -m space --focus next | yabai -m window --space next
 
 # -- Starting/Stopping/Restarting Yabai --
 

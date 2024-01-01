@@ -27,6 +27,11 @@ brew install navi
 brew install --cask raycast
 ```
 
+# 配置文件
+
+```sh
+git clone https://github.com/mkeco/dotfile.git ~/.config
+```
 # neovim
 
 ```sh
@@ -35,8 +40,3 @@ git clone --depth 1 https://github.com/AstroNvim/AstroNvim ~/.config/nvim
 git clone https://github.com/mkeco/astronvim-config.git ~/.config/nvim/lua/user
 ```
 
-# 配置文件
-
-```sh
-git clone https://github.com/mkeco/dotfile.git ~/.config
-```
