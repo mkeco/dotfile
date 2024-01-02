@@ -12,7 +12,7 @@ yabai -m config bottom_padding 7
 yabai -m config left_padding 7
 yabai -m config right_padding 7
 yabai -m config window_gap 8
-yabai -m config window_animation_duration    0.3        
+yabai -m config window_animation_duration    0.4        
 yabai -m config window_animation_frame_rate  60
 
 # yabai -m config external_bar all:50:50
@@ -60,3 +60,9 @@ yabai -m rule --add app="^pot$" manage=off
 yabai -m rule --add app="^微信$" manage=off
 yabai -m rule --add app="^数码测色计$" manage=off
 yabai -m rule --add app="^Easydict$" manage=off
+yabai -m rule --add app="^备忘录$" manage=off
+yabai -m rule --add app="^便签$" manage=off
+yabai -m rule --add app="^预览$" manage=off
+yabai -m rule --add app="^活动监视器$" manage=off
+yabai -m rule --add app="^访达$" manage=off
+yabai -m rule --add app="^提醒事项$" manage=off
