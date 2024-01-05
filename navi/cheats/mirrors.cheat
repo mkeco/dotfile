@@ -1,0 +1,73 @@
+% mirrors
+
+# brew mirrors 设置清华源
+
+export HOMEBREW_CORE_GIT_REMOTE="https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-core.git"
+for tap in core cask{,-fonts,-versions} command-not-found services; do
+    brew tap --custom-remote --force-auto-update "homebrew/${tap}" "https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-${tap}.git"
+done
+brew update
+
+# fedora mirrors设置清华源
+
+sudo sed -e 's|^metalink=|#metalink=|g' \
+         -e 's|^#baseurl=http://download.example/pub/fedora/linux|baseurl=https://mirrors.tuna.tsinghua.edu.cn/fedora|g' \
+         -i.bak \
+         /etc/yum.repos.d/fedora.repo \
+         /etc/yum.repos.d/fedora-modular.repo \
+         /etc/yum.repos.d/fedora-updates.repo \
+         /etc/yum.repos.d/fedora-updates-modular.repo
+
+# docker mirrors设置源
+
+mkdir -p /etc/docker
+tee /etc/docker/daemon.json <<-'EOF'
+{
+    "registry-mirrors": [
+        "https://docker.mirrors.sjtug.sjtu.edu.cn",
+        "https://docker.nju.edu.cn",
+        "https://docker.m.daocloud.io",
+        "https://hub-mirror.c.163.com"
+    ],
+    "insecure-registries":["https://git.mkzero.top:44301"]
+}
+EOF
+
+# npm mirrors腾讯镜像源
+npm config set registry http://mirrors.cloud.tencent.com/npm/
+npm config get registry
+
+# npm mirrors 淘宝镜像源
+npm config set registry https://registry.npmmirror.com
+npm config get registry
+
+# pip mirrors镜像源
+python -m pip install -i https://pypi.tuna.tsinghua.edu.cn/simple --upgrade pip
+
+pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
+
+pip config set global.extra-index-url "http://mirrors.aliyun.com/pypi/simple/ https://pypi.mirrors.ustc.edu.cn/simple http://pypi.douban.com/simple/"
+
+# conda mirrors 镜像源
+
+channels:
+  - defaults
+show_channel_urls: true
+default_channels:
+  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main
+  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/r
+  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/msys2
+custom_channels:
+  conda-forge: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud
+  msys2: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud
+  bioconda: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud
+  menpo: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud
+  pytorch: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud
+  pytorch-lts: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud
+  simpleitk: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud
+
+
+# golang mirrors 镜像源
+
+go env -w GO111MODULE=on
+go env -w GOPROXY=https://goproxy.cn,direct

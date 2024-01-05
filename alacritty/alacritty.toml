@@ -1,0 +1,23 @@
+# import = [ "~/.config/alacritty/material.toml" ]
+[window]
+
+decorations = "None"
+padding = { x = 2}
+dynamic_padding = true
+
+[font]
+
+normal = { family = "MesloLGM Nerd Font Mono", style = "Regular" }
+
+bold = { family = "MesloLGM Nerd Font Mono", style = "Bold" }
+
+italic = { family = "MesloLGM Nerd Font Mono", style = "Italic" }
+
+bold_italic = { family = "MesloLGM Nerd Font Mono", style = "Bold Italic" }
+
+size = 24
+
+[cursor]
+
+style = {shape = "Beam"}
+
