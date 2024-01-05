@@ -5,5 +5,6 @@ set -U fish_greeting
      starship init fish | source
      alias vim=nvim
      alias ls=lsd
+     navi widget fish | source
 end
 
