@@ -66,3 +66,4 @@ yabai -m rule --add app="^预览$" manage=off
 yabai -m rule --add app="^活动监视器$" manage=off
 yabai -m rule --add app="^访达$" manage=off
 yabai -m rule --add app="^提醒事项$" manage=off
+yabai -m rule --add app="^HapiGo$" manage=off

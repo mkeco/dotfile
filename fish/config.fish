@@ -3,6 +3,7 @@ if status is-interactive
 set -U fish_greeting
     /opt/homebrew/bin/brew shellenv | source 
      starship init fish | source
-     abbr -a vim nvim
+     alias vim=nvim
+     alias ls=lsd
 end
 
