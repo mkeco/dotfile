@@ -1,0 +1,9 @@
+% fish
+
+# 安装fisher插件
+
+curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher
+
+# nvm 插件
+
+fisher install jorgebucaran/nvm.fish
