@@ -21,17 +21,14 @@ sudo sed -e 's|^metalink=|#metalink=|g' \
 # docker mirrors设置源
 
 mkdir -p /etc/docker
-tee /etc/docker/daemon.json <<-'EOF'
+sudo sh -c 'cat > /etc/docker/daemon.json <<EOF
 {
     "registry-mirrors": [
-        "https://docker.mirrors.sjtug.sjtu.edu.cn",
-        "https://docker.nju.edu.cn",
-        "https://docker.m.daocloud.io",
+		"https://docker.mirrors.sjtug.sjtu.edu.cn",
         "https://hub-mirror.c.163.com"
-    ],
-    "insecure-registries":["https://git.mkzero.top:44301"]
+    ]
 }
-EOF
+EOF'
 
 # npm mirrors腾讯镜像源
 npm config set registry http://mirrors.cloud.tencent.com/npm/
