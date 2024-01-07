@@ -1,0 +1,14 @@
+% img
+
+# img password 添加密码授权
+
+virt-customize -a Fedora-Cloud-Resized.qcow2 --run-command 'sed -ri "s/#PermitRootLogin prohibit-password/PermitRootLogin yes/" /etc/ssh/sshd_config && sed -ri "s/#PasswordAuthentication yes/PasswordAuthentication yes/" /etc/ssh/sshd_config' --root-password password:mkzero
+
+# img mirrors 修改源
+virt-customize -a Fedora-Cloud-Resized.qcow2 --run-command 'sed -e "s|^metalink=|#metalink=|g" -e "s|^#baseurl=http://download.example/pub/fedora/linux|baseurl=https://mirrors.tuna.tsinghua.edu.cn/fedora|g" -i.bak /etc/yum.repos.d/fedora.repo /etc/yum.repos.d/fedora-updates.repo'
+
+# img add space 增加空间
+qemu-img create -f qcow2 Fedora-Cloud-Resized.qcow2 120G
+
+# img expand 扩展空间 注意镜像名
+virt-resize --expand /dev/vda5  Fedora-Cloud-img-mirror.qcow2 Fedora-Cloud-Resized.qcow2
