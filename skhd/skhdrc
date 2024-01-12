@@ -3,26 +3,27 @@
 # ctrl - p : skhd -k "up"
 # ctrl - f : skhd -k "right"
 # ctrl - b : skhd -k "left"
-# ctrl - [ : skhd -k "escape"
+ ctrl - 0x21 : skhd -k "escape"
 
 # Arrow Keys
 # ctrl - b : skhd -k "left"
 ctrl - n : skhd -k "down"
 ctrl - p : skhd -k "up"
 # ctrl - f : skhd -k "right"
-ctrl - 0x21 : skhd -k "escape"
-ctrl - h : skhd -k "backspace"
+# ctrl - h : skhd -k "backspace"
 # -- Changing Window Focus --
 
 # change window focus within space
-alt - j : yabai -m window --focus south
-alt - k : yabai -m window --focus north
-alt - h : yabai -m window --focus west
-alt - l : yabai -m window --focus east
+shift + ctrl - j : yabai -m window --focus south
+shift + ctrl - k : yabai -m window --focus north
+shift + ctrl - h : yabai -m window --focus west
+shift + ctrl - l : yabai -m window --focus east
+shift + ctrl - p : skhd -k "ctrl - left"
+shift + ctrl - n : skhd -k "ctrl - right"
 
-alt - n : skhd -k "ctrl - right" 
-alt - p : skhd -k "ctrl - left"
-
+# open app
+cmd - return : open -a Alacritty -n
+ctrl - return : open -a Safari -n
 #change focus between external displays (left and right)
 # alt - s: yabai -m display --focus west
 # alt - g: yabai -m display --focus east
@@ -59,10 +60,6 @@ alt - p : skhd -k "ctrl - left"
 # shift + alt - l : yabai -m window --swap east
 
 # move window and split
-ctrl + alt - j : yabai -m window --warp south
-ctrl + alt - k : yabai -m window --warp north
-ctrl + alt - h : yabai -m window --warp west
-ctrl + alt - l : yabai -m window --warp east
 
 # move window to display left and right
 # shift + alt - s : yabai -m window --display west; yabai -m display --focus west;
@@ -70,12 +67,10 @@ ctrl + alt - l : yabai -m window --warp east
 
 
 # move window to prev and next space
-ctrl + alt - p : yabai -m space --focus prev | yabai -m window --space prev 
 
 
 # Focus next space by mission-control index
 
-ctrl + alt - n : yabai -m space --focus next | yabai -m window --space next
 
 # -- Starting/Stopping/Restarting Yabai --
 
