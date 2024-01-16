@@ -10,7 +10,7 @@
 ctrl - n : skhd -k "down"
 ctrl - p : skhd -k "up"
 # ctrl - f : skhd -k "right"
-# ctrl - h : skhd -k "backspace"
+ ctrl - h : skhd -k "backspace"
 # -- Changing Window Focus --
 
 # change window focus within space

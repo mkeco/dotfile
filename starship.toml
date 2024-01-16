@@ -54,7 +54,7 @@ symbol = " "
 symbol = " "
 
 [hostname]
-ssh_symbol = " "
+ssh_symbol = "󰢹 "
 
 [java]
 symbol = " "
