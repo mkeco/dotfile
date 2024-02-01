@@ -61,10 +61,6 @@
     meslo-lgs-nf
 
     ];
-    fontconfig = {
-    enable = true;
-    defaultFonts.monospace = [ "MesloLGM Nerd Font Mono" ];
-    };
   };
 
   # Select internationalisation properties.
