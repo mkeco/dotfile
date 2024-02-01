@@ -5,6 +5,8 @@ nix-channel --add https://mirrors.tuna.tsinghua.edu.cn/nix-channels/nixpkgs-unst
 # 更新 channel
 nix-channel --update
 
+# 镜像临时
+
 # 为磁盘创建 GPT 分区表
 parted /dev/vda -- mklabel gpt 
 
@@ -36,4 +38,4 @@ mount /dev/disk/by-label/boot /mnt/boot
 nixos-generate-config --root /mnt 
 
 # 修改配置文件
-cp /home/nixos/dotfile/cloud-nixos/configuration.nix  /mnt/etc/nixos/configuration.nxi
+cp /home/nixos/dotfile/cloud-nixos/configuration.nix  /mnt/etc/nixos/configuration.nix
