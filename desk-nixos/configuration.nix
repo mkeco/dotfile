@@ -56,6 +56,8 @@
 
   # Select internationalisation properties.
   i18n.defaultLocale = "en_US.UTF-8";
+  i18n.inputMethod.enabled = "fcitx5"
+  i18n.inputMethod.fcitx5.addons = with pkgs; [ fcitx5-rime ]
 
   i18n.extraLocaleSettings = {
     LC_ADDRESS = "zh_CN.UTF-8";
@@ -102,6 +104,8 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
    neovim
+   hyprpaper
+   dunst
    go
    bun
    curl
