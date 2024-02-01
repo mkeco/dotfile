@@ -55,14 +55,9 @@
   time.timeZone = "Asia/Shanghai";
 
   # font
-  fonts = {
-    fontDir.enable = true;
-    packages = with pkgs; [
-    meslo-lgs-nf
-
-    ];
-  };
-
+  fonts.packages = with pkgs; [
+  (nerdfonts.override { fonts = [ "FiraCode" "DroidSansMono" "MesloLG" ]; })
+];
   # Select internationalisation properties.
   i18n.defaultLocale = "en_US.UTF-8";
   i18n.inputMethod.enabled = "fcitx5";
