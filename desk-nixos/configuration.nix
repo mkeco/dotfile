@@ -54,6 +54,19 @@
   # Set your time zone.
   time.timeZone = "Asia/Shanghai";
 
+  # font
+  fonts = {
+    fontDir.enable = true;
+    packages = with pkgs; [
+    nerdfonts
+
+    ];
+    fontconfig = {
+    enable = true;
+    defaultFonts.monospace = [ "MesloLGM Nerd Font Mono" ];
+    };
+  };
+
   # Select internationalisation properties.
   i18n.defaultLocale = "en_US.UTF-8";
   i18n.inputMethod.enabled = "fcitx5";
