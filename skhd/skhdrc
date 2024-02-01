@@ -10,7 +10,7 @@
 ctrl - n : skhd -k "down"
 ctrl - p : skhd -k "up"
 # ctrl - f : skhd -k "right"
- ctrl - h : skhd -k "backspace"
+# ctrl - h : skhd -k "backspace"
 # -- Changing Window Focus --
 
 # change window focus within space
@@ -22,8 +22,8 @@ shift + ctrl - p : skhd -k "ctrl - left"
 shift + ctrl - n : skhd -k "ctrl - right"
 
 # open app
-cmd - return : open -a Alacritty -n
-ctrl - return : open -a Safari -n
+cmd - return : open -a Alacritty 
+ctrl - return : open -a Safari
 #change focus between external displays (left and right)
 # alt - s: yabai -m display --focus west
 # alt - g: yabai -m display --focus east

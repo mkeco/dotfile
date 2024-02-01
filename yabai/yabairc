@@ -7,13 +7,13 @@ yabai -m config layout bsp
 yabai -m config window_placement second_child
 
 # padding set to 12px
-yabai -m config top_padding 6
-yabai -m config bottom_padding 6
-yabai -m config left_padding 6
-yabai -m config right_padding 6
-yabai -m config window_gap 12
-yabai -m config window_animation_duration    0.3      
-yabai -m config window_animation_frame_rate  60
+# yabai -m config top_padding 6
+# yabai -m config bottom_padding 6
+# yabai -m config left_padding 6
+# yabai -m config right_padding 6
+yabai -m config window_gap 10
+# yabai -m config window_animation_duration    0.3      
+# yabai -m config window_animation_frame_rate  60
 
  # yabai -m config external_bar main:10:0
 # yabai -m config window_shadow on
@@ -66,6 +66,6 @@ yabai -m rule --add app="^活动监视器$" manage=off
 yabai -m rule --add app="^访达$" manage=off
 yabai -m rule --add app="^提醒事项$" manage=off
 yabai -m rule --add app="^HapiGo$" manage=off
-yabai -m rule --add app="^Alacritty$" manage=off
+# yabai -m rule --add app="^Alacritty$" manage=off
 yabai -m rule --add app="^ToDesk$" manage=off
 yabai -m rule --add app="^VidHub$" manage=off
