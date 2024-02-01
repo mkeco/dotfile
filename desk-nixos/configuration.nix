@@ -14,11 +14,11 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-  services.xserver.enable = true;
-  services.xserver.displayManager.sddm.enable = true;
-  programs.hyprland.enable = true;
-  environment.sessionVariables.NIXOS_OZONE_WL = "1";
-  environment.sessionVariables.WLR_NO_HARDWARE_CURSORS = "1";
+  # services.xserver.enable = true;
+  # services.xserver.displayManager.sddm.enable = true;
+  # programs.hyprland.enable = true;
+  # environment.sessionVariables.NIXOS_OZONE_WL = "1";
+  # environment.sessionVariables.WLR_NO_HARDWARE_CURSORS = "1";
 
   networking.hostName = "nixos"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
@@ -26,6 +26,12 @@
   # Configure network proxy if necessary
   # networking.proxy.default = "http://user:password@proxy:port/";
   # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
+
+  # hyprland
+
+  programs.hyprland.enable = true;
+  programs.waybar.enable = true;
+
 
   # shell 
   programs.fish.enable = true;
@@ -58,13 +64,20 @@
     xkbVariant = "";
   };
 
+  # docker
+
+  virtualisation.docker.enable = true;
+
+  virtualisation.docker.extraOptions = "--registry-mirror=https://docker.mirrors.sjtug.sjtu.edu.cn --registry-mirror=https://hub-mirror.c.163.com ";
+
+
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.mk = {
     isNormalUser = true;
     description = "mk";
     hashedPassword = "$y$j9T$vsiOOiv0pEzB4W/knbwOH.$nfCn6EINAUC1nXYkTcPKg/pOQrfEygPjlnsFiRNLQSD";
     openssh.authorizedKeys.keys = [ "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIIACXEQ3qmZLJI/uqLtBvatiwwOB3vQJZknN7iNB9sz0 mkzeroagem@gmail.com" ];
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "docker" ];
     packages = with pkgs; [];
   };
 
@@ -77,14 +90,13 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-  #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
-  #  wget
    neovim
-   # fish
+   go
+   conda
+   bun
    wget
    git
    starship
-   alacritty
    navi
    lsd
   ];
