@@ -42,4 +42,4 @@ cp /home/nixos/dotfile/desk-nixos/configuration.nix  /mnt/etc/nixos/configuratio
 mkdir -p /mnt/home/mk/.config
 cp -r /home/nixos/dotfile/* /mnt/home/mk/.config
 
-nixos-install
+nixos-install --option substituters "https://mirrors.tuna.tsinghua.edu.cn/nix-channels/store"
