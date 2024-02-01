@@ -8,22 +8,22 @@ nix-channel --update
 # 镜像临时
 
 # 为磁盘创建 GPT 分区表
-parted /dev/vda -- mklabel gpt 
+parted /dev/nvme0n1 -- mklabel gpt 
 
 # 创建根分区,从 512MB 到磁盘末尾
-parted /dev/vda -- mkpart root ext4 512MB 100%
+parted /dev/nvme0n1 -- mkpart root ext4 512MB 100%
 
 # 创建 512MB 的 EFI 系统分区 
-parted /dev/vda -- mkpart ESP fat32 1MB 512MB
+parted /dev/nvme0n1 -- mkpart ESP fat32 1MB 512MB
 
 # 设置第2分区为 EFI system 分区
-parted /dev/vda -- set 2 esp on
+parted /dev/nvme0n1 -- set 2 esp on
 
 # 给根分区打上文件系统标签 nixos
-mkfs.ext4 -L nixos /dev/vda1
+mkfs.ext4 -L nixos /dev/nvme0n1p1
 
 # 给 EFI 分区打上文件系统标签 boot
-mkfs.fat -F 32 -n boot /dev/vda2
+mkfs.fat -F 32 -n boot /dev/nvme0n1p2
 
 # 挂载根分区到 /mnt
 mount /dev/disk/by-label/nixos /mnt  
