@@ -58,7 +58,7 @@
   fonts = {
     fontDir.enable = true;
     packages = with pkgs; [
-    nerdfonts
+    meslo-lgs-nf
 
     ];
     fontconfig = {
