@@ -108,7 +108,7 @@
   };
 
   # 镜像
-  nix.settings.substituters = [ "https://mirror.sjtu.edu.cn/nix-channels/store" ];
+ # nix.settings.substituters = [ "https://mirror.sjtu.edu.cn/nix-channels/store" ];
   
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
