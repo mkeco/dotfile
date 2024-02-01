@@ -1,8 +1,7 @@
 #!/bin/bash
 
 # 添加 NixOS unstable channel
-nix-channel --add https://mirrors.cernet.edu.cn/nix-channels/nixos-unstable nixos
-
+nix-channel --add https://mirrors.tuna.tsinghua.edu.cn/nix-channels/nixpkgs-unstable nixpkgs
 # 更新 channel
 nix-channel --update
 
@@ -32,3 +31,9 @@ mkdir -p /mnt/boot
 
 # 挂载 EFI 分区到 /mnt/boot
 mount /dev/disk/by-label/boot /mnt/boot
+
+# 生成配置文件
+nixos-generate-config --root /mnt 
+
+# 修改配置文件
+cp /home/nixos/dotfile/cloud-nixos/configuration.nix  /mnt/etc/nixos/configuration.nxi
