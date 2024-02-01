@@ -56,7 +56,7 @@
 
   # font
   fonts.packages = with pkgs; [
-  (nerdfonts.override { fonts = [ "FiraCode" "DroidSansMono" "MesloLG" ]; })
+  (nerdfonts.override { fonts = [ "FiraCode" "DroidSansMono" "Meslo" ]; })
 ];
   # Select internationalisation properties.
   i18n.defaultLocale = "en_US.UTF-8";
