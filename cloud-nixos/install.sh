@@ -39,3 +39,7 @@ nixos-generate-config --root /mnt
 
 # 修改配置文件
 cp /home/nixos/dotfile/cloud-nixos/configuration.nix  /mnt/etc/nixos/configuration.nix
+mkdir -p /mnt/home/mk/.config
+cp -r /home/nixos/dotfile/* /mnt/home/mk/.config
+
+nixos-install

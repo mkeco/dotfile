@@ -1,0 +1,10 @@
+% nix
+
+# git管理nix配置文件
+sudo mv /etc/nixos /etc/nixos.bak  # 备份原来的配置
+sudo ln -s ~/.config/cloud-nixos/ /etc/nixos
+
+# nix 清华镜像
+
+nix-channel --add https://mirrors.tuna.tsinghua.edu.cn/nix-channels/nixpkgs-unstable nixpkgs
+nix-channel --update
