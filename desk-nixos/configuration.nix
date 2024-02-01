@@ -96,8 +96,8 @@
   environment.systemPackages = with pkgs; [
    neovim
    go
-   conda
    bun
+   curl
    wget
    git
    starship
