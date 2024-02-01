@@ -32,6 +32,10 @@
   programs.hyprland.enable = true;
   programs.waybar.enable = true;
 
+  # yazi
+
+  programs.yazi.enable = true;
+
 
   # shell 
   programs.fish.enable = true;
