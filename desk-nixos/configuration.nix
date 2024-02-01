@@ -14,14 +14,21 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-  # services.xserver.enable = true;
-  # services.xserver.displayManager.sddm.enable = true;
+  hardware.bluetooth.enable = true; # enables support for Bluetooth
+  hardware.bluetooth.powerOnBoot = true; # powers up the default Bluetooth controller on boot
+
+  services.xserver.enable = true;
+  services.xserver.displayManager.sddm.enable = true;
   # programs.hyprland.enable = true;
-  # environment.sessionVariables.NIXOS_OZONE_WL = "1";
-  # environment.sessionVariables.WLR_NO_HARDWARE_CURSORS = "1";
+   environment.sessionVariables.NIXOS_OZONE_WL = "1";
+   environment.sessionVariables.WLR_NO_HARDWARE_CURSORS = "1";
 
   networking.hostName = "nixos"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
+
+  # sound
+  sound.enable = true;
+
 
   # Configure network proxy if necessary
   # networking.proxy.default = "http://user:password@proxy:port/";
@@ -103,6 +110,8 @@
    starship
    navi
    lsd
+   alacritty
+   firefox
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
