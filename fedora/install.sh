@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo dnf install fish go navi lsd neovim conda curl unzip wget -y
+sudo dnf install curl unzip wget fish go navi lsd neovim conda  -y
 
 curl -fsSL https://get.docker.com -o get-docker.sh
 
@@ -21,10 +21,10 @@ sudo sh -c 'cat > /etc/docker/daemon.json <<EOF
 }
 EOF'
 
-sudo systemctl restart docker
 
 curl -sS https://starship.rs/install.sh | sh
 
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 curl -fsSL https://bun.sh/install | bash
+sudo systemctl restart docker
