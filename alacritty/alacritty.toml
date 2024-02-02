@@ -2,7 +2,7 @@
 [window]
 # dimensions = { columns = 65, lines = 20}
 # position= {x = 2100, y = 900}
-decorations = "None"
+decorations = "Buttonless"
 padding = { x = 2}
 dynamic_padding = true
 
