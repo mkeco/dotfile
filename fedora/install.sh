@@ -28,3 +28,4 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 curl -fsSL https://bun.sh/install | bash
 sudo systemctl restart docker
+chsh -s /usr/bin/fish
