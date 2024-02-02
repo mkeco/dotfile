@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo dnf install fish go navi lsd neovim conda curl weget -y
+sudo dnf install fish go navi lsd neovim conda curl unzip wget -y
 
 curl -fsSL https://get.docker.com -o get-docker.sh
 
