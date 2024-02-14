@@ -69,3 +69,5 @@ yabai -m rule --add app="^HapiGo$" manage=off
 # yabai -m rule --add app="^Alacritty$" manage=off
 yabai -m rule --add app="^ToDesk$" manage=off
 yabai -m rule --add app="^VidHub$" manage=off
+yabai -m rule --add app="^Omnivore$" manage=off
+yabai -m rule --add app="^PicGo$" manage=off
