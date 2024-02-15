@@ -9,3 +9,6 @@ sudo sh get-docker.sh --mirror Aliyun
 
 curl -sS https://starship.rs/install.sh | sh
 
+# code server install 
+curl -fsSL https://code-server.dev/install.sh | sh
+
