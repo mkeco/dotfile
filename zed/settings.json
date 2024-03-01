@@ -8,6 +8,10 @@
 // from the command palette or from `Zed` application menu.
 {
   "vim_mode": true,
-  "ui_font_size": 16,
-  "buffer_font_size": 16
+  "ui_font_size": 18,
+  "buffer_font_size": 18,
+  "buffer_font_family": "MesloLGM Nerd Font",
+  "autosave": "on_focus_change",
+  "format_on_save": "on",
+  "formatter": "language_server"
 }
