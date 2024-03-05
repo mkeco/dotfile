@@ -1273,3 +1273,7 @@
 {"signed_in":true,"milliseconds_since_first_event":0,"type":"Cpu","usage_as_percentage":1.726447,"core_count":8}
 {"signed_in":true,"milliseconds_since_first_event":239997,"type":"Memory","memory_in_bytes":42909696,"virtual_memory_in_bytes":431252127744}
 {"signed_in":true,"milliseconds_since_first_event":239997,"type":"Cpu","usage_as_percentage":1.6691449,"core_count":8}
+{"signed_in":true,"milliseconds_since_first_event":0,"type":"Memory","memory_in_bytes":46022656,"virtual_memory_in_bytes":431251554304}
+{"signed_in":true,"milliseconds_since_first_event":0,"type":"Cpu","usage_as_percentage":1.7227781,"core_count":8}
+{"signed_in":true,"milliseconds_since_first_event":239995,"type":"Memory","memory_in_bytes":47333376,"virtual_memory_in_bytes":431252127744}
+{"signed_in":true,"milliseconds_since_first_event":239995,"type":"Cpu","usage_as_percentage":1.7050877,"core_count":8}
