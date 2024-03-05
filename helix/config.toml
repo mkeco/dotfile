@@ -13,3 +13,5 @@ select = "underline"
 
 [keys.insert]
 "C-[" = "normal_mode"
+"C-f" = "move_char_right"
+"C-b" = "move_char_left"

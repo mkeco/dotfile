@@ -16,6 +16,6 @@ brew tap homebrew/cask-fonts && brew install --cask font-meslo-lg-nerd-font
 brew install starship navi lsd fish zed mac-mouse-fix helix mrkai77/cask/loop
 brew install --cask alacritty easydict 
 
-sudo bash -c 'echo "/opt/homebrew/bin/fish" >> /etc/shells'
+echo /opt/homebrew/bin/fish | sudo tee -a /etc/shells
 chsh -s /opt/homebrew/bin/fish
 
