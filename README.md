@@ -29,7 +29,7 @@ brew tap homebrew/cask-fonts && brew install --cask font-meslo-lg-nerd-font
 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-brew install neovim starship navi lsd fish zed mac-mouse-fix
+brew install neovim starship navi lsd fish zed mac-mouse-fix helix
 brew install --cask alacritty easydict rectangle
 
 sudo vim /etc/shells

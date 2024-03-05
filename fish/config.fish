@@ -5,8 +5,8 @@ if status is-interactive
         /opt/homebrew/bin/brew shellenv | source
     end
     starship init fish | source
-    alias vim=nvim
-    alias ls=lsd
+    abbr -a vim hx
+    abbr -a ls lsd
     navi widget fish | source
 end
 
