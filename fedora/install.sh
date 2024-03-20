@@ -11,7 +11,7 @@ sudo usermod -aG docker $USER
 echo "修改docker镜像🇨🇳."
 
 sudo systemctl start docker
-
+sudo systemctl enable docker
 sudo sh -c 'cat > /etc/docker/daemon.json <<EOF
 {
   "registry-mirrors": [
