@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo dnf install curl unzip wget fish go navi lsd helix conda  -y
+sudo dnf install curl btop unzip wget fish go navi lsd helix conda  -y
 
 curl -fsSL https://get.docker.com -o get-docker.sh
 
