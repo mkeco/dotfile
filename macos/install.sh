@@ -13,7 +13,7 @@ source /Users/mkzero/.zprofile
 brew tap homebrew/cask-fonts && brew install --cask font-meslo-lg-nerd-font
 
 # Install software
-brew install starship navi lsd btop fish zed helix mrkai77/cask/loop
+brew install starship navi lsd btop fish zed helix mrkai77/cask/loop oven-sh/bun/bun
 brew install --cask alacritty easydict 
 
 echo /opt/homebrew/bin/fish | sudo tee -a /etc/shells

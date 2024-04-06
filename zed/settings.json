@@ -9,8 +9,8 @@
 {
   "theme": "Material Dark",
   "vim_mode": true,
-  "ui_font_size": 18,
-  "buffer_font_size": 18,
+  "ui_font_size": 24,
+  "buffer_font_size": 24,
   "buffer_font_family": "Maple Mono NF CN",
   "autosave": "on_focus_change",
   "format_on_save": "on",
