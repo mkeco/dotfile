@@ -1,0 +1,5 @@
+2024-05-05 08:41:50.871 [info] update#setState idle
+2024-05-05 08:42:20.872 [info] update#setState checking for updates
+2024-05-05 08:42:21.321 [info] update#setState idle
+2024-05-05 08:43:24.820 [error] Blocked vscode-file request vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/services/textMate/browser/backgroundTokenization/worker/textMateTokenizationWorker.worker.js
+2024-05-05 08:43:24.838 [info] Extension host with pid 14527 exited with code: 0, signal: unknown.

@@ -1,0 +1,263 @@
+{
+  "editor.accessibilitySupport": "off",
+  "editor.fontSize": 24,
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+  "go.autocompleteUnimportedPackages": true,
+  "go.toolsManagement.autoUpdate": true,
+  "go.useCodeSnippetsOnFunctionSuggest": true,
+  "go.useCodeSnippetsOnFunctionSuggestWithoutType": true,
+  "remote.SSH.remotePlatform": {
+    "Tower": "linux",
+    "VM": "linux",
+    "prod": "linux",
+    "dev": "linux",
+    "192.168.11.165": "linux",
+    "tower": "linux"
+  },
+  "security.workspace.trust.untrustedFiles": "open",
+  "tabnine.experimentalAutoImports": true,
+  "terminal.integrated.fontSize": 20,
+  "window.commandCenter": true,
+  "terminal.integrated.env.osx": {
+    "FIG_NEW_SESSION": "1"
+  },
+  "explorer.confirmDelete": false,
+  "workbench.colorTheme": "Material Theme Darker High Contrast",
+  "code-runner.languageIdToFileExtensionMap": {
+    "bat": ".bat",
+    "powershell": ".ps1",
+    "typescript": ".ts"
+  },
+  "code-runner.executorMap": {
+
+
+    "javascript": "node",
+    "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
+    "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "zig": "zig run",
+    "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "php": "php",
+    "python": "python -u",
+    "perl": "perl",
+    "perl6": "perl6",
+    "ruby": "ruby",
+    "go": "cd $dir && go run .",
+    "lua": "lua",
+    "groovy": "groovy",
+    "powershell": "powershell -ExecutionPolicy ByPass -File",
+    "bat": "cmd /c",
+    "shellscript": "bash",
+    "fsharp": "fsi",
+    "csharp": "scriptcs",
+    "vbscript": "cscript //Nologo",
+    "typescript": "ts-node",
+    "coffeescript": "coffee",
+    "scala": "scala",
+    "swift": "swift",
+    "julia": "julia",
+    "crystal": "crystal",
+    "ocaml": "ocaml",
+    "r": "Rscript",
+    "applescript": "osascript",
+    "clojure": "lein exec",
+    "haxe": "haxe --cwd $dirWithoutTrailingSlash --run $fileNameWithoutExt",
+    "rust": "cd $dir && rustc $fileName && $dir$fileNameWithoutExt",
+    "racket": "racket",
+    "scheme": "csi -script",
+    "ahk": "autohotkey",
+    "autoit": "autoit3",
+    "dart": "dart",
+    "pascal": "cd $dir && fpc $fileName && $dir$fileNameWithoutExt",
+    "d": "cd $dir && dmd $fileName && $dir$fileNameWithoutExt",
+    "haskell": "runghc",
+    "nim": "nim compile --verbosity:0 --hints:off --run",
+    "lisp": "sbcl --script",
+    "kit": "kitc --run",
+    "v": "v run",
+    "sass": "sass --style expanded",
+    "scss": "scss --style expanded",
+    "less": "cd $dir && lessc $fileName $fileNameWithoutExt.css",
+    "FortranFreeForm": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "fortran-modern": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "fortran_fixed-form": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "fortran": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "sml": "cd $dir && sml $fileName"
+  },
+  "code-runner.executorMapByFileExtension": {
+
+    ".vb": "cd $dir && vbc /nologo $fileName && $dir$fileNameWithoutExt",
+    ".vbs": "cscript //Nologo",
+    ".scala": "scala",
+    ".jl": "julia",
+    ".cr": "crystal",
+    ".ml": "ocaml",
+    ".zig": "zig run",
+    ".exs": "elixir",
+    ".hx": "haxe --cwd $dirWithoutTrailingSlash --run $fileNameWithoutExt",
+    ".rkt": "racket",
+    ".scm": "csi -script",
+    ".ahk": "autohotkey",
+    ".au3": "autoit3",
+    ".kt": "cd $dir && kotlinc $fileName -include-runtime -d $fileNameWithoutExt.jar && java -jar $fileNameWithoutExt.jar",
+    ".kts": "kotlinc -script",
+    ".dart": "dart",
+    ".pas": "cd $dir && fpc $fileName && $dir$fileNameWithoutExt",
+    ".pp": "cd $dir && fpc $fileName && $dir$fileNameWithoutExt",
+    ".d": "cd $dir && dmd $fileName && $dir$fileNameWithoutExt",
+    ".hs": "runhaskell",
+    ".nim": "nim compile --verbosity:0 --hints:off --run",
+    ".csproj": "dotnet run --project",
+    ".fsproj": "dotnet run --project",
+    ".lisp": "sbcl --script",
+    ".kit": "kitc --run",
+    ".v": "v run",
+    ".vsh": "v run",
+    ".sass": "sass --style expanded",
+    ".cu": "cd $dir && nvcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    ".ring": "ring",
+    ".sml": "cd $dir && sml $fileName"
+  },
+  "code-runner.executorMapByGlob": {
+
+    "pom.xml": "cd $dir && mvn clean package"
+  },
+  "code-runner.runInTerminal": true,
+  "git.openRepositoryInParentFolders": "never",
+  "codeium.detectProxy": false,
+  "explorer.confirmDragAndDrop": false,
+  "CodeGPT.query.language": "Chinese",
+  "CodeGPT.temperature": 1,
+  "genieai.openai.apiBaseUrl": "",
+  "[python]": {
+    "editor.formatOnType": true
+  },
+  "[dart]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.rulers": [
+      80
+    ],
+    "editor.selectionHighlight": false,
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.suggestSelection": "first",
+    "editor.tabCompletion": "onlySnippets",
+    "editor.wordBasedSuggestions": "off"
+  },
+  "files.autoSave": "onFocusChange",
+  "livePreview.customExternalBrowser": "Chrome",
+  "interactiveSession.editor.fontSize": 18,
+  "redhat.telemetry.enabled": true,
+  "workbench.iconTheme": "material-icon-theme",
+  "chat-gpt.lang": "cn",
+  "easycode.userEmail": "mkzeroagem@gmail.com",
+  "chatgpt.lang": "cn",
+  "lldb.library": "/usr/lib/liblldb.so",
+  "editor.fontFamily": "Maple Mono NF CN",
+  "workbench.settings.applyToAllProfiles": [
+  
+  
+  ],
+
+  // vim 配置
+
+  "vim.easymotion": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "k"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<leader>", "d"],
+      "after": ["d", "d"]
+    },
+    {
+      "before": ["K"],
+      "commands": ["lineBreakInsert"],
+      "silent": true
+    }
+  ],
+  "vim.leader": "<space>",
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-f>": false
+  },
+  "sqltools.connections": [
+    {
+      "mysqlOptions": {
+        "authProtocol": "default",
+        "enableSsl": "Disabled"
+      },
+      "previewLimit": 50,
+      "server": "192.168.22.66",
+      "port": 3310,
+      "driver": "MySQL",
+      "name": "ai",
+      "username": "root",
+      "database": "ai"
+    }
+  ],
+  "vim.visualModeKeyBindings": [
+    
+  ],
+  "workbench.startupEditor": "none",
+  "editor.acceptSuggestionOnEnter": "off",
+  "remote.SSH.useLocalServer": false,
+  "workbench.sideBar.location": "right",
+  "editor.cursorBlinking": "smooth",
+  "accessibility.signals.lineHasWarning": {
+    "sound": "on"
+  },
+  "accessibility.signals.lineHasBreakpoint": {
+    "sound": "on"
+  },
+  "accessibility.signals.terminalQuickFix": {
+    "sound": "on"
+  },
+  "accessibility.signals.taskCompleted": {
+    "sound": "on"
+  },
+  "accessibility.signals.taskFailed": {
+    "sound": "on"
+  },
+  "accessibility.signals.terminalCommandFailed": {
+    "sound": "on"
+  },
+  "accessibility.signals.notebookCellCompleted": {
+    "sound": "on"
+  },
+  "accessibility.signals.notebookCellFailed": {
+    "sound": "on"
+  },
+  "accessibility.signals.chatRequestSent": {
+    "sound": "on"
+  },
+  "accessibility.signals.chatResponseReceived": {
+    "sound": "on"
+  },
+  "accessibility.signals.chatResponsePending": {
+    "sound": "on"
+  },
+  "accessibility.signals.clear": {
+    "sound": "on"
+  },
+  "accessibility.signals.save": {
+    "sound": "always"
+  },
+  "accessibility.signals.format": {
+    "sound": "always"
+  },
+  "accessibility.signals.terminalBell": {
+    "sound": "on"
+  },
+  "terminal.integrated.enableVisualBell": true,
+  "window.menuBarVisibility": "toggle"
+}

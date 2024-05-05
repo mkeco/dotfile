@@ -1,0 +1,12 @@
+2024-05-05 08:41:51.325 [info] Started local extension host with pid 14527.
+2024-05-05 08:41:54.000 [info] [perf] Render performance baseline is 18ms
+2024-05-05 08:42:38.271 [error] Cannot read properties of undefined (reading 'accessToken'): TypeError: Cannot read properties of undefined (reading 'accessToken')
+    at p.z (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:1686:21851)
+    at p.C (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:1686:22484)
+    at d.value (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:1686:21653)
+2024-05-05 08:42:44.996 [info] Settings Sync: Updating due to change in sessions
+2024-05-05 08:42:44.997 [info] Settings Sync: Updated current session e1fbf8b91f849986
+2024-05-05 08:43:12.534 [warning] [remote-ssh]: Couldn't find message for key setting.usseExecServer.description.
+2024-05-05 08:43:14.197 [error] [Extension Host] (node:14527) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+(Use `exe --trace-deprecation ...` to show where the warning was created)
+2024-05-05 08:43:15.289 [error] ENOENT: no such file or directory, open '/home/mkzero/.config/Code/User/globalStorage/vscodevim.vim/.registers': Error: ENOENT: no such file or directory, open '/home/mkzero/.config/Code/User/globalStorage/vscodevim.vim/.registers'

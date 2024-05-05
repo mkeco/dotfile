@@ -1,0 +1,3 @@
+2024-05-05 07:44:56.898 [info] Started initializing default profile extensions in extensions installation folder. file:///home/mkzero/.vscode/extensions
+2024-05-05 07:44:56.989 [warning] Failed to create default profile extensions manifest in extensions installation folder. file:///home/mkzero/.vscode/extensions Unable to create file 'vscode-userdata:/home/mkzero/.vscode/extensions/extensions.json' that already exists when overwrite flag is not set
+2024-05-05 07:44:56.989 [info] Completed initializing default profile extensions in extensions installation folder. file:///home/mkzero/.vscode/extensions
