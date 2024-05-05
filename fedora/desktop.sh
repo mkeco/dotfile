@@ -1,0 +1,24 @@
+#!/bin/bash
+# 更换镜像
+sudo sed -e 's|^metalink=|#metalink=|g' \
+    -e 's|^#baseurl=http://download.example/pub/fedora/linux|baseurl=https://mirrors.tuna.tsinghua.edu.cn/fedora|g' \
+    -i.bak \
+    /etc/yum.repos.d/fedora.repo \
+    /etc/yum.repos.d/fedora-modular.repo \
+    /etc/yum.repos.d/fedora-updates.repo \
+    /etc/yum.repos.d/fedora-updates-modular.repo
+sudo dnf makecache
+
+sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
+echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" | sudo tee /etc/yum.repos.d/vscode.repo > /dev/null
+
+sudo dnf install curl btop unzip wget fish go navi lsd helix conda  -y
+sudo dnf copr enable ryanabx/cosmic-epoch
+sudo dnf install cosmic-desktop
+
+curl -sS https://starship.rs/install.sh | sh
+
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+
+curl -fsSL https://bun.sh/install | bash 
+chsh -s /usr/bin/fish
