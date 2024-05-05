@@ -3,4 +3,9 @@ nextjs-nodejs
 zed/.tmp*
 btop/btop.log
 raycast/
-
+Code/
+code-server/
+cosmic/
+gtk-3.0/
+pulse/
+dconf/
