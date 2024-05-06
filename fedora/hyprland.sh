@@ -26,7 +26,7 @@ sudo dnf install curl flatpak firefox code alacritty btop unzip wget fish go nav
 sudo dnf install fcitx5 fcitx5-gtk fcitx5-qt fcitx5-configtool fcitx5-rime librime -y
 
 #安裝sddm
-sudo dnf install sddm qt6-qt5compa qt6-qtsvg qt6-qtquickcontrols2 -y
+sudo dnf install sddm qt6-qt5compat qt6-qtsvg qt6-qtquickcontrols2 -y
 sudo git clone https://github.com/keyitdev/sddm-astronaut-theme.git /usr/share/sddm/themes/sddm-astronaut-theme --depth=1 
 sudo echo "[Theme]
 Current=sddm-astronaut-theme" | sudo tee /etc/sddm.conf
@@ -35,14 +35,21 @@ Current=sddm-astronaut-theme" | sudo tee /etc/sddm.conf
 curl -sS https://starship.rs/install.sh | sh
 
 # install rust
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+curl -sSf https://sh.rustup.rs | sh
 source $HOME/.cargo/env
 cargo install matugen
 # install bun
 curl -fsSL https://bun.sh/install | bash
 
+# install font
+wget https://github.com/subframe7536/maple-font/releases/download/v7.0-beta15/MapleMono-NF-CN.zip
+mkdir MapleMono-NF-CN 
+unzip MapleMono-NF-CN.zip -d MapleMono-NF-CN
+sudo mv MapleMono-NF-CN /usr/share/fonts
+
+
 sudo systemctl set-default graphical.target 
-chsh -s /usr/bin/fish
+sudo chsh -s /usr/bin/fish
 
 sudo reboot
 
