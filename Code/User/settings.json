@@ -258,5 +258,7 @@
   "window.menuBarVisibility": "toggle",
   "accessibility.signals.progress": {
     "sound": "on"
-  }
+  },
+  "workbench.activityBar.location": "top",
+  "window.customTitleBarVisibility": "auto"
 }

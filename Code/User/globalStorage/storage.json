@@ -1,7 +1,9 @@
 {
     "userDataProfilesMigration": true,
     "profileAssociations": {
-        "workspaces": {},
+        "workspaces": {
+            "file:///home/mkzero/test": "__default__profile__"
+        },
         "emptyWindows": {
             "1714913096087": "__default__profile__"
         }
@@ -11,7 +13,11 @@
     "telemetry.machineId": "d24793fa245f33896f76cd83f87e05ab51569cbea9aec74040ba18b06da4a433",
     "backupWorkspaces": {
         "workspaces": [],
-        "folders": [],
+        "folders": [
+            {
+                "folderUri": "file:///home/mkzero/test"
+            }
+        ],
         "emptyWindows": [
             {
                 "backupFolder": "1714913096087"
@@ -63,6 +69,20 @@
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/mkzero/test",
+                                        "path": "/home/mkzero/test",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/test"
+                                },
+                                {
+                                    "id": "vscode.menubar.separator"
+                                },
+                                {
                                     "id": "workbench.action.openRecent",
                                     "label": "更多(&&M)..."
                                 },
@@ -96,18 +116,15 @@
                     },
                     {
                         "id": "workbench.action.files.save",
-                        "label": "保存(&&S)",
-                        "enabled": false
+                        "label": "保存(&&S)"
                     },
                     {
                         "id": "workbench.action.files.saveAs",
-                        "label": "另存为(&&A)...",
-                        "enabled": false
+                        "label": "另存为(&&A)..."
                     },
                     {
                         "id": "saveAll",
-                        "label": "全部保存(&&L)",
-                        "enabled": false
+                        "label": "全部保存(&&L)"
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -230,6 +247,14 @@
                                 {
                                     "id": "settings.filterByOnline",
                                     "label": "联机服务设置(&&O)"
+                                },
+                                {
+                                    "id": "vscode.menubar.separator"
+                                },
+                                {
+                                    "id": "workbench.userDataSync.actions.manage",
+                                    "label": "设置同步已打开",
+                                    "checked": true
                                 }
                             ]
                         }
@@ -239,13 +264,15 @@
                     },
                     {
                         "id": "workbench.action.files.revert",
-                        "label": "还原文件(&&V)",
-                        "enabled": false
+                        "label": "还原文件(&&V)"
                     },
                     {
                         "id": "workbench.action.closeActiveEditor",
-                        "label": "关闭编辑器(&&C)",
-                        "enabled": false
+                        "label": "关闭编辑器(&&C)"
+                    },
+                    {
+                        "id": "workbench.action.closeFolder",
+                        "label": "关闭文件夹(&&F)"
                     },
                     {
                         "id": "workbench.action.closeWindow",
@@ -290,13 +317,11 @@
                     },
                     {
                         "id": "actions.find",
-                        "label": "查找(&&F)",
-                        "enabled": false
+                        "label": "查找(&&F)"
                     },
                     {
                         "id": "editor.action.startFindReplaceAction",
-                        "label": "替换(&&R)",
-                        "enabled": false
+                        "label": "替换(&&R)"
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -442,8 +467,7 @@
                                 },
                                 {
                                     "id": "workbench.action.toggleSidebarVisibility",
-                                    "label": "主侧边栏(&&P)",
-                                    "checked": true
+                                    "label": "主侧边栏(&&P)"
                                 },
                                 {
                                     "id": "workbench.action.toggleAuxiliaryBar",
@@ -460,7 +484,8 @@
                                 },
                                 {
                                     "id": "toggle.toggleCustomTitleBar",
-                                    "label": "自定义标题栏"
+                                    "label": "自定义标题栏",
+                                    "checked": true
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -476,12 +501,12 @@
                                         "items": [
                                             {
                                                 "id": "workbench.action.activityBarLocation.default",
-                                                "label": "默认(&&D)",
-                                                "checked": true
+                                                "label": "默认(&&D)"
                                             },
                                             {
                                                 "id": "workbench.action.activityBarLocation.top",
-                                                "label": "顶部(&&T)"
+                                                "label": "顶部(&&T)",
+                                                "checked": true
                                             },
                                             {
                                                 "id": "workbench.action.activityBarLocation.bottom",
@@ -760,7 +785,7 @@
                     {
                         "id": "editor.action.toggleWordWrap",
                         "label": "自动换行(&&W)",
-                        "enabled": false
+                        "checked": true
                     }
                 ]
             },
@@ -778,8 +803,7 @@
                     },
                     {
                         "id": "workbench.action.navigateToLastEditLocation",
-                        "label": "上次编辑位置(&&L)",
-                        "enabled": false
+                        "label": "上次编辑位置(&&L)"
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -1296,6 +1320,11 @@
                 "label": "Ctrl+W",
                 "userSettingsLabel": "ctrl+w"
             },
+            "workbench.action.closeFolder": {
+                "label": "Ctrl+K F",
+                "isNative": false,
+                "userSettingsLabel": "ctrl+k f"
+            },
             "workbench.action.closeWindow": {
                 "label": "Alt+F4",
                 "userSettingsLabel": "alt+f4"
@@ -1690,9 +1719,9 @@
         "layoutInfo": {
             "sideBarSide": "left",
             "editorPartMinWidth": 220,
-            "titleBarHeight": 0,
-            "activityBarWidth": 48,
-            "sideBarWidth": 256,
+            "titleBarHeight": 35,
+            "activityBarWidth": 0,
+            "sideBarWidth": 0,
             "statusBarHeight": 22,
             "windowBorder": false
         }
@@ -1702,10 +1731,11 @@
             "backupPath": "/home/mkzero/.config/Code/Backups/1714913096087",
             "uiState": {
                 "mode": 1,
-                "x": 448,
-                "y": 164,
-                "width": 1024,
-                "height": 768
+                "x": 0,
+                "y": 0,
+                "width": 1184,
+                "height": 884,
+                "zoomLevel": 3
             }
         },
         "openedWindows": []

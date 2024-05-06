@@ -17,9 +17,23 @@ sudo dnf install curl xdg-user-dirs flatpak firefox code alacritty btop unzip wg
 sudo dnf copr enable ryanabx/cosmic-epoch
 sudo dnf install cosmic-desktop
 
+# 安裝輸入法
+dnf install fcitx5 fcitx5-gtk fcitx5-qt fcitx5-configtool fcitx5-rime librime 
+
+#安裝sddm
+dnf install sddm qt6-qt5compa qt6-qtsvg qt6-qtquickcontrols2 
+git clone https://github.com/keyitdev/sddm-astronaut-theme.git /usr/share/sddm/themes/sddm-astronaut-theme --depth=1 
+
+sudo echo "[Theme]
+Current=sddm-astronaut-theme" | sudo tee /etc/sddm.conf
+
 curl -sS https://starship.rs/install.sh | sh
+
 
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
-curl -fsSL https://bun.sh/install | bash 
+curl -fsSL https://bun.sh/install | bash
+sudo systemctl set-default graphical.target 
 chsh -s /usr/bin/fish
+
+
