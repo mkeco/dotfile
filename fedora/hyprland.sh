@@ -11,7 +11,8 @@ sudo dnf makecache
 
 # install hyprland
 sudo dnf copr enable solopasha/hyprland
-sudo dnf install hyprland aylurs-gtk-shell swww eww -y
+sudo dnf install hyprland aylurs-gtk-shell swww eww nodejs -y
+sudo npm install -g bun sass
 git clone https://github.com/Aylur/dotfiles.git
 cp -r dotfiles/ags $HOME/.config/ags
 
@@ -20,7 +21,7 @@ sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
 echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" | sudo tee /etc/yum.repos.d/vscode.repo > /dev/null
 
 # install software
-sudo dnf install curl flatpak firefox code alacritty btop unzip wget fish go navi lsd helix conda  -y
+sudo dnf install curl fd-find flatpak firefox code alacritty btop unzip wget fish go navi lsd helix conda  -y
 
 # 安裝輸入法
 sudo dnf install fcitx5 fcitx5-gtk fcitx5-qt fcitx5-configtool fcitx5-rime librime -y
@@ -38,6 +39,7 @@ curl -sS https://starship.rs/install.sh | sh
 curl -sSf https://sh.rustup.rs | sh
 source $HOME/.cargo/env
 cargo install matugen
+
 # install bun
 curl -fsSL https://bun.sh/install | bash
 
