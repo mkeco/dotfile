@@ -1,6 +1,6 @@
 # import = [ "~/.config/alacritty/material.toml" ]
 [window]
- dimensions = { columns = 80, lines = 25}
+# dimensions = { columns = 80, lines = 25}
 # position= {x = 2100, y = 900}
 decorations = "Buttonless"
 padding = { x = 2}
@@ -16,7 +16,7 @@ italic = { family = "Maple Mono NF CN", style = "Italic" }
 
 bold_italic = { family = "Maple Mono NF CN", style = "Bold Italic" }
 
-size = 24
+size = 30
 
 [cursor]
 
