@@ -14,16 +14,16 @@ ctrl - p : skhd -k "up"
 # -- Changing Window Focus --
 
 # change window focus within space
-shift + ctrl - j : yabai -m window --focus south
-shift + ctrl - k : yabai -m window --focus north
-shift + ctrl - h : yabai -m window --focus west
-shift + ctrl - l : yabai -m window --focus east
-shift + ctrl - p : skhd -k "ctrl - left"
-shift + ctrl - n : skhd -k "ctrl - right"
+# shift + ctrl - j : yabai -m window --focus south
+# shift + ctrl - k : yabai -m window --focus north
+# shift + ctrl - h : yabai -m window --focus west
+# shift + ctrl - l : yabai -m window --focus east
+cmd + ctrl - h : skhd -k "ctrl - left"
+cmd + ctrl - l : skhd -k "ctrl - right"
 
 # open app
 cmd - return : open -a Alacritty 
-ctrl - return : open -a Safari
+ctrl - return : open -a Firefox
 #change focus between external displays (left and right)
 # alt - s: yabai -m display --focus west
 # alt - g: yabai -m display --focus east
