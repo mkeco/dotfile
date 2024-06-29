@@ -1,6 +1,7 @@
 nvim/
 nextjs-nodejs
-zed/.tmp*
+zed/*
+!zde/settings.json
 btop/btop.log
 raycast/
 code-server/
