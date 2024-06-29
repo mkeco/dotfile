@@ -10,9 +10,9 @@ source /Users/mkzero/.zprofile
 # Install MesloLGM Nerd Font Mono
 
 # Install software
-brew install starship navi lsd btop fish zed helix mrkai77/cask/loop oven-sh/bun/bun
+brew install starship navi btop zed helix xonsh
 brew install --cask alacritty 
 
-echo /opt/homebrew/bin/fish | sudo tee -a /etc/shells
+echo /opt/homebrew/bin/xonsh | sudo tee -a /etc/shells
 chsh -s /opt/homebrew/bin/fish
 

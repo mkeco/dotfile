@@ -9,7 +9,7 @@ sed -e 's|^metalink=|#metalink=|g' \
     /etc/yum.repos.d/fedora-updates-modular.repo
 
 # 安装必备工具    
-sudo dnf install curl btop unzip wget fish navi lsd helix  -y
+sudo dnf install curl btop unzip wget navi helix  -y
 
 # 安装 docker
 sudo sh get-docker.sh 
@@ -39,5 +39,6 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 # 安装 golang
 sudo dnf install go -y
 
-# 安装 bun
-curl -fsSL https://bun.sh/install | bash
+# 安装 nodejs
+sudo dnf install nodejs -y
+
