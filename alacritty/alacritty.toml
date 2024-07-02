@@ -1,10 +1,12 @@
-# import = [ "~/.config/alacritty/material.toml" ]
+ import = [ "~/.config/alacritty/material.toml" ]
 [window]
  dimensions = { columns = 80, lines = 30}
 # position= {x = 2100, y = 900}
 decorations = "Buttonless"
 # padding = { x = 2}
 dynamic_padding = true
+opacity = 0.8
+blur = true
 
 [font]
 

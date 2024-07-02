@@ -4,15 +4,16 @@
 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/mkzero/.zprofile
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
 source /Users/mkzero/.zprofile
 
 # Install MesloLGM Nerd Font Mono
 
 # Install software
-brew install starship navi btop zed helix xonsh
+brew install starship navi btop helix 
 brew install --cask alacritty 
 
-echo /opt/homebrew/bin/xonsh | sudo tee -a /etc/shells
-chsh -s /opt/homebrew/bin/fish
-
+echo 'eval "$(starship init zsh)"
+source "/Users/mkzero/.rye/env"
+eval "$(navi widget zsh)"
+' >> .zshrc
