@@ -1,19 +1,18 @@
 #!/bin/bash
 
-# Clone dotfile repository
+# install brew
 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
 source /Users/mkzero/.zprofile
 
+# .zshrc
+echo "source ~/.config/macos/.zshrc" >> ~/.zshrc
+
 # Install MesloLGM Nerd Font Mono
 
 # Install software
-brew install starship navi btop helix 
+brew install starship navi btop helix yazi zellij node bat lsd dog 
 brew install --cask alacritty 
 
-echo 'eval "$(starship init zsh)"
-source "/Users/mkzero/.rye/env"
-eval "$(navi widget zsh)"
-' >> .zshrc

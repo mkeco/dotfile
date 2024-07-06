@@ -115,10 +115,10 @@ blinking-cursor = false
 #
 # Example:
  [window]
- width = 600
- height = 400
-# mode = "Windowed"
- opacity = 0.5
+ width = 1200
+ height = 1000
+ mode = "Windowed"
+ opacity = 0.8
  blur = true
 # decorations = "Enabled"
 

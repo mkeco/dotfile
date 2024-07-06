@@ -1,12 +1,15 @@
- import = [ "~/.config/alacritty/material.toml" ]
+import = ["~/.config/alacritty/dracula.toml"]
+
+
 [window]
- dimensions = { columns = 80, lines = 30}
+dimensions = { columns = 80, lines = 40 }
 # position= {x = 2100, y = 900}
 decorations = "Buttonless"
 # padding = { x = 2}
 dynamic_padding = true
-opacity = 0.8
+# opacity = 0.8
 blur = true
+option_as_alt = "Both"
 
 [font]
 
@@ -23,4 +26,3 @@ size = 23
 [cursor]
 
 # style = {shape = "Beam",blinking = "Off"}
-
