@@ -284,7 +284,7 @@ theme "dracula"
 // The name of the default layout to load on startup
 // Default: "default"
 //
-// default_layout "~/.config/zellij/layouts/layout.kdl"
+default_layout "layout"
 
 // Choose the mode that zellij uses when starting up.
 // Default: normal
