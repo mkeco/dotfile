@@ -40,6 +40,6 @@ curl -sS https://starship.rs/install.sh | sh
 
 
 # 安装 语言 
-sudo dnf install go nodejs -y
+sudo dnf install go -y
 
 
