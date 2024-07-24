@@ -1,12 +1,12 @@
 layout {
     pane {
-        size "70%"
+        size "65%"
         borderless true
         name "editor"
         
     }
     pane {
-        size "30%"
+        size "35%"
     	name "terminal"
 
     }

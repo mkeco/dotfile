@@ -14,7 +14,6 @@ alias ping='gping'
 # 环境变量
 export PATH=$HOME/go/bin:$PATH
 export EDITOR=/opt/homebrew/bin/hx
-export PATH="$HOME/.local/bin:$PATH"
 
 
  

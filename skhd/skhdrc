@@ -1,8 +1,8 @@
 # keymap
-# ctrl - n : skhd -k "down"
-# ctrl - p : skhd -k "up"
-# ctrl - f : skhd -k "right"
-# ctrl - b : skhd -k "left"
+ ctrl - n : skhd -k "down"
+ ctrl - p : skhd -k "up"
+ ctrl - f : skhd -k "right"
+ ctrl - b : skhd -k "left"
 # ctrl - 0x21 : skhd -k "escape"
 
 # Arrow Keys
@@ -10,7 +10,7 @@
 # ctrl - n : skhd -k "down"
 # ctrl - p : skhd -k "up"
 # ctrl - f : skhd -k "right"
-# ctrl - h : skhd -k "backspace"
+ ctrl - h : skhd -k "backspace"
 # -- Changing Window Focus --
 
 # change window focus within space
@@ -18,12 +18,12 @@
 # shift + ctrl - k : yabai -m window --focus north
 # shift + ctrl - h : yabai -m window --focus west
 # shift + ctrl - l : yabai -m window --focus east
-cmd + ctrl - h : skhd -k "ctrl - left"
-cmd + ctrl - l : skhd -k "ctrl - right"
+# cmd + ctrl - h : skhd -k "ctrl - left"
+# cmd + ctrl - l : skhd -k "ctrl - right"
 
 # open app
-cmd - return : open -a Alacritty 
-ctrl - return : open -a Firefox
+# cmd - return : open -a Alacritty 
+# ctrl - return : open -a Firefox
 #change focus between external displays (left and right)
 # alt - s: yabai -m display --focus west
 # alt - g: yabai -m display --focus east

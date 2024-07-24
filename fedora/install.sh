@@ -8,6 +8,11 @@ sed -e 's|^metalink=|#metalink=|g' \
     /etc/yum.repos.d/fedora-updates.repo \
     /etc/yum.repos.d/fedora-updates-modular.repo
 
+# 切换 shell    
+sudo dnf install zsh -y 
+chsh -s /bin/zsh
+echo "source ~/.config/fedora/.zshrc" >> .zshrc
+
 # 安装必备工具    
 sudo dnf install curl btop unzip wget navi helix  -y
 
@@ -30,15 +35,11 @@ sudo sh -c 'cat > /etc/docker/daemon.json <<EOF
 }
 EOF'
 
-# 安装提示
+# 安装提示符 
 curl -sS https://starship.rs/install.sh | sh
 
-# 安装 rust
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
-# 安装 golang
-sudo dnf install go -y
+# 安装 语言 
+sudo dnf install go nodejs -y
 
-# 安装 nodejs
-sudo dnf install nodejs -y
 
