@@ -1,5 +1,6 @@
 eval "$(starship init zsh)"
 eval "$(navi widget zsh)"
+eval "$(zoxide init zsh)"
 
 # 别名
 alias dnf='rpm-ostree'
