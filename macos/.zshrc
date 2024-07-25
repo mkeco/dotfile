@@ -3,7 +3,7 @@ source "/Users/mkzero/.rye/env"
 eval "$(navi widget zsh)"
 
 # 别名
-alias ls='lsd -a'
+alias ls='eza --icons -l -a --git'
 # alias yy='yazi'
 alias vim='hx'
 alias cat='bat'

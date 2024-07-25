@@ -6,7 +6,7 @@ chsh -s /bin/zsh
 echo "source ~/.config/fedora/.zshrc" >> ~/.zshrc
 
 # 安装必备工具    
-sudo dnf install curl btop unzip navi helix zoxide exa bat  -y
+sudo dnf install curl eza btop unzip navi helix zoxide bat  -y
 
 
 # 安装提示符 

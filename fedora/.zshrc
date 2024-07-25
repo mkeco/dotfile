@@ -4,7 +4,7 @@ eval "$(zoxide init zsh)"
 
 # 别名
 # alias dnf='rpm-ostree'
-alias ls='exa'
+alias ls='eza --icons -l -a --git'
 # alias yy='yazi'
 alias vim='hx'
 alias cat='bat'
