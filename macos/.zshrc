@@ -1,5 +1,5 @@
 eval "$(starship init zsh)"
-source "/Users/mkzero/.rye/env"
+# source "/Users/mkzero/.rye/env"
 eval "$(navi widget zsh)"
 
 # 别名
