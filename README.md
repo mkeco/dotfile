@@ -4,7 +4,7 @@
 # 配置文件
 
 ```sh
-git clone https://github.com/mkeco/dotfile.git ~/.config
+git clone --depth 1 https://github.com/mkeco/dotfile.git ~/.config
 ```
 # neovim
 
