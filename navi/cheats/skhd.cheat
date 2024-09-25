@@ -1,0 +1,13 @@
+% skhd
+
+# 重启skhd
+
+skhd --restart-service
+
+# stop service
+
+skhd --stop-service
+
+# start
+
+skhd --start-service
