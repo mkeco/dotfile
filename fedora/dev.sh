@@ -3,13 +3,13 @@
 # 切换 shell    
 sudo dnf install zsh -y 
 chsh -s /bin/zsh
-echo "source ~/.config/fedora/.zshrc" >> .zshrc
+echo "source ~/.config/fedora/.zshrc" >> ~/.zshrc
 
 # 安装必备工具    
-sudo dnf install curl btop unzip wget navi helix  -y
+sudo dnf install curl btop unzip wget navi helix eza  -y
 
 # 安装 docker
-sudo sh get-docker.sh 
+sudo sh get-docker.sh --mirror Aliyun
 
 sudo usermod -aG docker $USER
 

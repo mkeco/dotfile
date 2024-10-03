@@ -1,14 +1,11 @@
 eval "$(starship init zsh)"
 eval "$(navi widget zsh)"
-eval "$(zoxide init zsh)"
 
 # 别名
 # alias dnf='rpm-ostree'
-alias ls='eza --icons -l -a --git'
+alias ls='eza --icons -a '
 # alias yy='yazi'
 alias vim='hx'
-alias cat='bat'
-alias cd='z'
 
 # 环境变量
 
