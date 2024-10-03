@@ -20,7 +20,7 @@ sudo systemctl enable docker
 sudo sh -c 'cat > /etc/docker/daemon.json <<EOF
 {
   "registry-mirrors": [
-    "https://docker.mkzeroagem.workers.dev"
+    "https://2p9p3ypw.mirror.aliyuncs.com"
   ]
 }
 EOF'
