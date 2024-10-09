@@ -10,7 +10,7 @@ alias cat='bat'
 alias zl='zellij -l ~/.config/zellij/layouts/layout.kdl'
 alias cd='z'
 alias curl='curlie'
-alias ping='gping'
+# alias ping='gping'
 # 环境变量
 export PATH=$HOME/go/bin:$PATH
 export EDITOR=/opt/homebrew/bin/hx
