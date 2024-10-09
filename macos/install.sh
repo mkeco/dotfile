@@ -13,7 +13,10 @@ echo "source ~/.config/macos/.zshrc" >> ~/.zshrc
 # Install MesloLGM Nerd Font Mono
 
 # Install software
-brew install starship navi gh fzf curlie zsh-autosuggestions zsh-syntax-highlighting btop helix yazi zellij bat eza zoxide gping koekeishiya/formulae/skhd
+brew install starship navi gh fzf curlie \
+zsh-autosuggestions zsh-syntax-highlighting \
+btop helix yazi zellij bat eza zoxide gping \
+koekeishiya/formulae/skhd  oven-sh/bun/bun
 
 brew install --cask alacritty 
 

@@ -6,7 +6,7 @@ chsh -s /bin/zsh
 echo "source ~/.config/fedora/.zshrc" >> ~/.zshrc
 
 # 安装必备工具    
-sudo dnf install curl btop unzip wget navi helix eza  -y
+sudo dnf install podman curl btop unzip wget navi helix eza  -y
 
 # 安装 docker
 sudo sh get-docker.sh --mirror Aliyun
@@ -29,7 +29,8 @@ sudo systemctl restart docker
 # 安装提示符 
 curl -sS https://starship.rs/install.sh | sh
 
-
+#安装 bun
+curl -fsSL https://bun.sh/install | bash
 # 安装 语言 
 sudo dnf install go -y
 
