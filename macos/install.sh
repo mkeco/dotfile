@@ -15,7 +15,7 @@ echo "source ~/.config/macos/.zshrc" >> ~/.zshrc
 # Install software
 brew install starship navi gh fzf curlie \
 zsh-autosuggestions zsh-syntax-highlighting \
-btop helix yazi zellij bat eza zoxide gping \
+btop helix yazi bat eza zoxide \
 koekeishiya/formulae/skhd  oven-sh/bun/bun
 
 brew install --cask alacritty 
