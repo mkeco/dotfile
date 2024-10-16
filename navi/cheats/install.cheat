@@ -12,3 +12,10 @@ curl -sS https://starship.rs/install.sh | sh
 # code server install 
 curl -fsSL https://code-server.dev/install.sh | sh
 
+# rust 安装
+
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+
+# uv 安装
+
+curl -LsSf https://astral.sh/uv/install.sh | sh
