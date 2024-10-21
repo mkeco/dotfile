@@ -19,3 +19,8 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 # uv 安装
 
 curl -LsSf https://astral.sh/uv/install.sh | sh
+
+# deno 安装
+
+curl -fsSL https://deno.land/install.sh | sh
+
