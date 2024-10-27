@@ -1,5 +1,5 @@
 # keymap
- ctrl - n : skhd -k "tab"
+ ctrl - n : skhd -k "down"
  ctrl - p : skhd -k "up"
  ctrl - f : skhd -k "right"
  ctrl - b : skhd -k "left"
