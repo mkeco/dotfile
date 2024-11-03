@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # 安装必备工具    
-sudo dnf install -y fish eza zoxide gh podman curl unzip wget navi helix   
+sudo dnf install -y fish eza zoxide gh bat podman curl unzip wget navi helix   
 
 # 安装 语言 
 sudo dnf install go -y
@@ -14,5 +14,7 @@ chsh -s $(which fish)
 
 # 安装提示符 
 curl -sS https://starship.rs/install.sh | sh
+
+hostnamectl set-hostname --static dev
 
 sudo reboot
