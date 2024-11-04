@@ -18,5 +18,5 @@ Code - Insiders/
 Code/
 gh/
 uv/uv-receipt.json
-fish/conf.d/deno.fish
-fish/conf.d/uv.env.fish
+fish/conf.d/
+
