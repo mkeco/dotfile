@@ -6,8 +6,7 @@ sudo dnf install -y fish eza zoxide gh bat podman curl unzip wget navi helix
 # 安装 语言 
 sudo dnf install go -y
 curl -LsSf https://astral.sh/uv/install.sh | sh
-curl -fsSL https://deno.land/install.sh | sh
-
+curl -fsSL https://bun.sh/install | bash
 
 # 切换 shell    
 chsh -s $(which fish)
