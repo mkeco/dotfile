@@ -90,10 +90,10 @@ theme = "dracula"
 #
 # blinking-interval - Cursor update on milliseconds interval
 #
-# [cursor]
+[cursor]
 # shape = 'block'
-# blinking = false
-# blinking-interval = 800
+blinking = true
+blinking-interval = 400
 
 # Editor
 #
