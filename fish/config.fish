@@ -17,8 +17,8 @@ if status is-interactive
     zoxide init fish | source
 
     # 别名
-    alias ls='eza --icons -l -a --git'
-    alias vim='hx'
+    alias ls='eza -a --icons -l --git --no-time  --no-user'
+    alias vi='hx'
     alias cat='bat'
     alias cd='z'
 
