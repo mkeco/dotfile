@@ -13,8 +13,8 @@
 # Install MesloLGM Nerd Font Mono
 
 # Install software
-brew install starship navi gh fzf curlie   \
-btop helix bat eza zoxide   
+brew install fish starship navi gh fzf curlie   \
+btop helix bat eza fd zoxide   
 
 brew install --cask alacritty 
 

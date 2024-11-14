@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # 安装必备工具    
-sudo dnf install -y fish eza zoxide gh bat podman curl unzip wget navi helix   
+sudo dnf install -y fish eza zoxide fd-find gh bat podman curl unzip wget navi helix   
 
 # 安装 语言 
 sudo dnf install go -y

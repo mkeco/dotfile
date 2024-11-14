@@ -129,8 +129,8 @@ theme = "dracula"
 # width = 600
 # height = 400
 mode = "Maximized"
-opacity = 0.8
-blur = true
+# opacity = 0.8
+# blur = true
 decorations = "Buttonless"
 
 # Renderer
