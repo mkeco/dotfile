@@ -1,4 +1,3 @@
-import = ["~/.config/alacritty/dracula.toml"]
 
 
 [window]
@@ -24,5 +23,8 @@ bold_italic = { family = "Maple Mono NF CN", style = "Bold Italic" }
 size = 25
 
 [cursor]
+
+[general]
+import = ["~/.config/alacritty/dracula.toml"]
 
 # style = {shape = "Beam",blinking = "Off"}

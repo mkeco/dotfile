@@ -1,0 +1,4 @@
+% mac
+
+# 移除隔离 macOS 应用
+sudo xattr -dr com.apple.quarantine /Applications/
