@@ -1,0 +1,10 @@
+ls
+cd .config
+ls
+cd nushell/
+ls
+cat config.nu
+ls
+exit
+ls
+exit
