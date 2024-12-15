@@ -12,7 +12,6 @@ if status is-interactive
         set -Ux PATH $HOME/.cargo/bin $PATH
     end
 
-    starship init fish | source
     navi widget fish | source
     zoxide init fish | source
 
