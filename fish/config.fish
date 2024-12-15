@@ -12,14 +12,12 @@ if status is-interactive
         set -Ux PATH $HOME/.cargo/bin $PATH
     end
 
+    starship init fish | source
     navi widget fish | source
     zoxide init fish | source
 
     # 别名
     alias ls='eza -a --icons -l --git --no-time  --no-user'
-    alias vi='hx'
-    alias cat = bat
-    alias cd='z'
 
 
 end
