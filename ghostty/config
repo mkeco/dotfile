@@ -1,3 +1,4 @@
 font-family = "Maple Mono NF CN"
 font-size = 25
 keybind = global:cmd+shift+space=toggle_quick_terminal
+
