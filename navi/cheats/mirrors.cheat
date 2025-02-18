@@ -25,6 +25,7 @@ sudo sh -c 'cat > /etc/docker/daemon.json <<EOF
 {
     "registry-mirrors": [
 		"https://docker.mirrors.sjtug.sjtu.edu.cn",
+        "https://2p9p3ypw.mirror.aliyuncs.com",
         "https://hub-mirror.c.163.com"
     ]
 }
