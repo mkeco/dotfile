@@ -16,8 +16,4 @@
 brew install fish starship navi gh fzf curlie   \
 btop helix bat eza fd zoxide   
 
-curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher
-fisher install jorgebucaran/hydro
-
-brew install --cask alacritty 
 
