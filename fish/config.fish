@@ -7,7 +7,6 @@ if status is-interactive
 
         # 环境变量
         set -Ux PATH $HOME/go/bin $PATH
-        set -Ux GOROOT /usr/local/go
         set -Ux EDITOR /opt/homebrew/bin/hx
         set -Ux PATH $HOME/.local/bin $PATH
         set -Ux PATH $HOME/.cargo/bin $PATH
@@ -19,7 +18,7 @@ if status is-interactive
 
     # 别名
     alias ls='eza -a --icons -l --git --no-time  --no-user'
-    alias cat =bat
+    alias cat=bat
 
 
 end
