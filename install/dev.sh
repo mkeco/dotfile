@@ -1,12 +1,14 @@
 #!/bin/bash
 
+# git pull config
+
+git clone --depth 1 https://github.com/mkeco/dotfile.git ~/.config
+
 # 安装必备工具    
 sudo dnf install -y fish eza zoxide fd-find gh bat podman curl unzip wget navi helix   
 
-# 安装 语言 
-sudo dnf install go -y
-curl -LsSf https://astral.sh/uv/install.sh | sh
-curl -fsSL https://bun.sh/install | bash
+curl https://mise.run | sh
+
 
 # 切换 shell    
 chsh -s $(which fish)
