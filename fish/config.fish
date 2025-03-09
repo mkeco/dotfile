@@ -6,10 +6,12 @@ if status is-interactive
         /opt/homebrew/bin/brew shellenv | source
 
         # 环境变量
-        set -Ux PATH $HOME/go $PATH
-        set -Ux EDITOR /opt/homebrew/bin/hx
-        set -Ux PATH $HOME/.local/bin $PATH
-        set -Ux PATH $HOME/.cargo/bin $PATH
+
+        set -x EDITOR /opt/homebrew/bin/hx
+        set -x GOPATH (go env GOPATH)
+        set -x PATH $PATH (go env GOPATH)/bin
+        set -x PATH $PATH $HOME/.local/bin
+        set -x PATH $PATH HOME/.cargo/bin
     end
 
     starship init fish | source

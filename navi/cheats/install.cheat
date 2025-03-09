@@ -1,29 +1,33 @@
 % install
 
-# docker 安装
+# docker install
 
 curl -fsSL https://get.docker.com -o get-docker.sh
 sudo sh get-docker.sh --mirror Aliyun
 
-# starship
+# starship install
 
 curl -sS https://starship.rs/install.sh | sh
 
 # code server install 
 curl -fsSL https://code-server.dev/install.sh | sh
 
-# rust 安装
+# rust install
 
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
-# uv 安装
+# uv install
 
 curl -LsSf https://astral.sh/uv/install.sh | sh
 
-# bun 安装 
+# bun install
 curl -fsSL https://bun.sh/install | bash
 
-# deno 安装
+# deno install
 
 curl -fsSL https://deno.land/install.sh | sh
+
+# mise install
+
+curl https://mise.run | sh
 

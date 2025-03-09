@@ -1,0 +1,16 @@
+% lsp
+
+# golang lsp install
+go install golang.org/x/tools/gopls@latest
+
+# rust lsp install
+rustup component add rust-analyzer
+
+# python lsp install
+
+uv tool install ruff@latest
+
+# web lsp install
+
+bun install -g typescript-language-server vscode-css-languageservice vscode-json-language-server vscode-html-language-server @taplo/cli yaml-language-server bash-language-server
+
