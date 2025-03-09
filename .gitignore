@@ -1,4 +1,5 @@
 nvim/
+go/
 nextjs-nodejs
 zed/*
 !zde/settings.json
