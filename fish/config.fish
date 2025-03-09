@@ -20,6 +20,5 @@ if status is-interactive
     # 别名
     alias ls='eza -a --icons -l --git --no-time  --no-user'
     alias cat=bat
-    alias cd = z
 
 end
