@@ -5,14 +5,15 @@ if status is-interactive
     if test (uname) = Darwin
         /opt/homebrew/bin/brew shellenv | source
 
-        # 环境变量
-
-        set -x EDITOR /opt/homebrew/bin/hx
-        set -x GOPATH (go env GOPATH)
-        set -x PATH $PATH (go env GOPATH)/bin
-        set -x PATH $PATH $HOME/.local/bin
-        set -x PATH $PATH HOME/.cargo/bin
     end
+
+    # 环境变量
+
+    set -x EDITOR /opt/homebrew/bin/hx
+    set -x GOPATH (go env GOPATH)
+    set -x PATH $PATH (go env GOPATH)/bin
+    set -x PATH $PATH $HOME/.local/bin
+    set -x PATH $PATH HOME/.cargo/bin
 
     starship init fish | source
     navi widget fish | source
