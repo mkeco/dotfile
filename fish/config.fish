@@ -9,11 +9,9 @@ if status is-interactive
 
     # 环境变量
 
-    set -x EDITOR /opt/homebrew/bin/hx
-    set -x GOPATH (go env GOPATH)
-    set -x PATH $PATH (go env GOPATH)/bin
     set -x PATH $PATH $HOME/.local/bin
-    set -x PATH $PATH HOME/.cargo/bin
+
+    $HOME/.local/bin/mise activate fish | source
 
     starship init fish | source
     navi widget fish | source
@@ -24,7 +22,3 @@ if status is-interactive
     alias cat=bat
 
 end
-
-# bun
-set --export BUN_INSTALL "$HOME/.bun"
-set --export PATH $BUN_INSTALL/bin $PATH
