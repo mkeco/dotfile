@@ -18,6 +18,10 @@ sudo sed -e 's|^metalink=|#metalink=|g' \
          /etc/yum.repos.d/fedora-updates.repo \
          /etc/yum.repos.d/fedora-updates-modular.repo
 
+# fedora mirrors 交通大学
+
+sed -e 's/^metalink=/#metalink=/g' -e 's|^#baseurl=http://download.example/pub/|baseurl=https://mirror.sjtu.edu.cn/|g' -i.bak /etc/yum.repos.d/fedora.repo  /etc/yum.repos.d/fedora-updates.repo
+
 # docker mirrors设置源
 
 mkdir -p /etc/docker
