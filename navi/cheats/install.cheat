@@ -33,7 +33,7 @@ curl https://mise.run | sh
 
 # fedora install
 
-sudo dnf install -y fish eza zoxide gh bat curl unzip wget navi helix
+sudo dnf install -y fish zoxide gh bat curl unzip wget navi helix
 
 # brew install
 
