@@ -14,7 +14,7 @@ if status is-interactive
     $HOME/.local/bin/mise activate fish | source
 
     starship init fish | source
-    zoxide init fish | source
+    zoxide init --cmd cd fish | source
     navi widget fish | source
 
     # 别名
