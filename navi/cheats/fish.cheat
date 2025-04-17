@@ -1,7 +1,13 @@
 % fish
 
-# change fish
+# fedora change fish
 
 
-sudo sh -c 'echo "$(which fish)" >> /etc/shells'
-sudo chsh -s $(which fish)
+sudo bash -c 'echo "/usr/bin/fish" >> /etc/shells'
+chsh -s /usr/bin/fish
+
+# mac change fish
+
+sudo bash -c 'echo "/opt/homebrew/bin/fish" >> /etc/shells'
+chsh -s /opt/homebrew/bin/fish
+
