@@ -1,0 +1,6 @@
+% fish
+
+# change fish
+
+sudo echo "$(which fish)" >> /etc/shells
+sduo chsh -s $(which fish)

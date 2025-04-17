@@ -31,3 +31,20 @@ curl -fsSL https://deno.land/install.sh | sh
 
 curl https://mise.run | sh
 
+# fedora install
+
+sudo dnf install -y fish eza zoxide gh bat curl unzip wget navi helix
+
+# brew install
+
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
+
+source ~/.zprofile
+
+# macos install
+
+brew install fish starship navi gh fzf helix bat eza fd zoxide
+
+brew install --cask ghostty
