@@ -14,10 +14,10 @@ if status is-interactive
     $HOME/.local/bin/mise activate fish | source
 
     starship init fish | source
+    zoxide init fish | source
     navi widget fish | source
 
     # 别名
-    alias ls='eza -a --icons -l --git --no-time  --no-user'
     alias cat=bat
 
 end
