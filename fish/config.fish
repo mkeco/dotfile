@@ -17,7 +17,7 @@ if status is-interactive
     zoxide init --cmd cd fish | source
     navi widget fish | source
 
-    alias ls "eza -l --git"
+    alias ls "eza -a -l -h --git --no-user --icons"
     alias cat bat
 
 end
