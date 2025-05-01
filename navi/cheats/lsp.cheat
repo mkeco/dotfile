@@ -12,5 +12,4 @@ uv tool install ruff@latest
 
 # web lsp install
 
-bun install -g typescript-language-server vscode-css-languageservice vscode-json-language-server vscode-html-language-server @taplo/cli yaml-language-server bash-language-server
-
+bun install -g vscode-langservers-extracted typescript-language-server typescript
