@@ -13,4 +13,4 @@ uv tool install ruff@latest
 
 # web lsp install
 
-bun install -g vscode-langservers-extracted typescript-language-server typescript
+bun install -g vscode-langservers-extracted typescript-language-server typescript svelte-language-server
