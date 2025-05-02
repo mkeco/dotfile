@@ -10,8 +10,6 @@ if status is-interactive
     # 环境变量
 
     set -x PATH $PATH $HOME/.local/bin
-    set -Ux BUN_INSTALL ~/.bun
-    set -x PATH $PATH ~/.bun/bin
 
     $HOME/.local/bin/mise activate fish | source
 
