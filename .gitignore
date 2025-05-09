@@ -1,4 +1,6 @@
 linearmouse/
+fish/completions/kubectl.fish
+fish/completions/docker.fish
 nvim/
 go/
 nextjs-nodejs
