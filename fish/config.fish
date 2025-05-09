@@ -5,6 +5,10 @@ if status is-interactive
     if test (uname) = Darwin
         /opt/homebrew/bin/brew shellenv | source
 
+        # Added by OrbStack: command-line tools and integration
+        # This won't be added again if you remove it.
+        source ~/.orbstack/shell/init2.fish 2>/dev/null || :
+
     end
 
     # 环境变量
@@ -13,11 +17,10 @@ if status is-interactive
 
     $HOME/.local/bin/mise activate fish | source
 
-    starship init fish | source
     zoxide init --cmd cd fish | source
     navi widget fish | source
 
-    alias ls "eza -a -l -h --git --no-user --icons"
+    alias eza "eza -a -l -h --git --no-user --icons"
     alias cat bat
 
 end
