@@ -12,11 +12,11 @@ if status is-interactive
     end
 
     # 环境变量
-    starship init fish | source
 
     set -x PATH $PATH $HOME/.local/bin
 
     $HOME/.local/bin/mise activate fish | source
+    starship init fish | source
 
     zoxide init --cmd cd fish | source
     navi widget fish | source
