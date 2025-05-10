@@ -3,10 +3,12 @@
 # 在提示符之间插入空行
 add_newline = true
 
+
 format = """
 $hostname\
 $os\
-$character"""
+$character
+"""
 
 right_format = """
 $directory\
@@ -27,15 +29,15 @@ $kubernetes\
 $zig
 """
 [character]
-success_symbol = '[<](bold green)'
-error_symbol = '[✗](bold red)'
+success_symbol = '[󱜙 :](bold green)'
+error_symbol = '[󱚡 :](bold red)'
 
 [hostname]
 format = '[$ssh_symbol](bold blue) '
-ssh_symbol = '\ueb3a '
+ssh_symbol = ' '
 
 [os]
-format = "[$symbol]($style)"
+format = "[$symbol ]($style)"
 style = "bold blue"
 disabled = false
 
@@ -85,3 +87,27 @@ Ubuntu = " "
 Unknown = " "
 Void = " "
 Windows = "󰍲 "
+
+[zig]
+symbol = " "
+
+[rust]
+symbol = "󱘗 "
+
+[python]
+symbol = " "
+
+[nodejs]
+symbol = "󰎙 "
+
+[golang]
+symbol = " "
+
+[docker_context]
+symbol = " "
+
+[deno]
+symbol = " "
+
+[git_branch]
+symbol = " "
