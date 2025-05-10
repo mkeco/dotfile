@@ -4,6 +4,7 @@ eza = "latest"
 go = "latest"
 node = "22"
 rust = "latest"
+starship = "latest"
 uv = "latest"
 
 
