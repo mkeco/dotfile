@@ -12,6 +12,7 @@ if status is-interactive
     end
 
     # 环境变量
+    starship init fish | source
 
     set -x PATH $PATH $HOME/.local/bin
 
