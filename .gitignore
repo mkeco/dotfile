@@ -4,8 +4,8 @@ fish/completions/docker.fish
 nvim/
 go/
 nextjs-nodejs
-zed/*
-!zde/settings.json
+zed/conversations
+zed/prompts
 btop/btop.log
 raycast/
 code-server/

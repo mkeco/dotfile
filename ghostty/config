@@ -1,3 +1,6 @@
 font-family = "Maple Mono NF CN"
 font-size = 25
 
+background-opacity = 0.6
+background-blur = true
+
