@@ -12,6 +12,9 @@
   "ui_font_family": "Maple Mono NF CN",
   "buffer_font_family": "Maple Mono NF CN",
   "vim_mode": true,
+  "vim": {
+    "default_mode": "helix_normal"
+  },
   "theme": {
     "mode": "system",
     "light": "One Light",
@@ -30,6 +33,9 @@
     "panel.background": "#00000060",
     "status_bar.background": "#00000060",
     "editor.gutter.background": "#00000060",
-    "terminal.background": "#00000060"
+    "terminal.background": "#00000060",
+    "editor.subheader.background": "#00000060",
+    "title_bar.inactive_background": "#00000060",
+    "surface.background": "#00000060"
   }
 }
