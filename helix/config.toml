@@ -1,15 +1,23 @@
-theme = "maple-dark"
+theme = "vision-dark"
 
 [editor]
 mouse = true
 auto-save = true
+end-of-line-diagnostics = "hint"
+popup-border = "all"
+
+[editor.indent-guides]
+render = true
+character = "╎" # Some characters that work well: "▏", "┆", "┊", "⸽"
+skip-levels = 1
+
+
+[editor.inline-diagnostics]
+cursor-line = "warning" # show warnings and errors on the cursorline inline
+
 
 [editor.cursor-shape]
 insert = "bar"
 normal = "block"
 select = "underline"
-
-[editor.lsp]
-
-# display-messages = true
 

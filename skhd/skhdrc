@@ -4,3 +4,5 @@
  ctrl - b : skhd -k "left"
  ctrl - 0x21 : skhd -k "escape"
 ctrl - h : skhd -k "backspace"
+
+
