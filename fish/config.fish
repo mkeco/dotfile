@@ -13,9 +13,10 @@ if status is-interactive
 
     # 环境变量
 
+    /Users/mkzero/.local/bin/mise activate fish | source # added by https://mise.run/fish
+
     set -x PATH $PATH $HOME/.local/bin
 
-    $HOME/.local/bin/mise activate fish | source
     starship init fish | source
 
     zoxide init --cmd cd fish | source
@@ -23,8 +24,12 @@ if status is-interactive
 
     alias ll "eza -a -l -h --git --no-user --icons"
 
-end
+    # bun
+    set --export BUN_INSTALL "$HOME/.bun"
+    set --export PATH $BUN_INSTALL/bin $PATH
 
-# bun
-set --export BUN_INSTALL "$HOME/.bun"
-set --export PATH $BUN_INSTALL/bin $PATH
+else
+
+    /Users/mkzero/.local/bin/mise activate fish --shims | source
+
+end

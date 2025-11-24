@@ -1,12 +1,8 @@
 [tools]
 deno = "latest"
-eza = "latest"
 go = "latest"
 node = "22"
+python = "3.14"
 rust = "latest"
-uv = "latest"
 
 
-[settings]
-python.uv_venv_auto = true
-idiomatic_version_file_enable_tools = []
