@@ -5,6 +5,8 @@
 
 ```sh
 git clone --depth 1 https://github.com/mkeco/dotfile.git ~/.config
+
+echo 'export ZDOTDIR="$HOME/.config/zsh"' >> ~/.zshenv
 ```
 # mac
 
