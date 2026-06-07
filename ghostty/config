@@ -1,6 +1,8 @@
 font-family = "Maple Mono NF CN"
 font-size = 25
+keybind = global:cmd+ctrl+t=toggle_quick_terminal
 
-background-opacity = 0.7
-background-blur = true
+
+
+
 

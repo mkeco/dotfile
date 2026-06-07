@@ -22,8 +22,6 @@ if status is-interactive
     zoxide init --cmd cd fish | source
     navi widget fish | source
 
-    alias ll "eza -a -l -h --git --no-user --icons"
-
     # bun
     set --export BUN_INSTALL "$HOME/.bun"
     set --export PATH $BUN_INSTALL/bin $PATH
@@ -33,3 +31,13 @@ else
     /Users/mkzero/.local/bin/mise activate fish --shims | source
 
 end
+
+# Added by Antigravity
+fish_add_path /Users/mkzero/.antigravity/antigravity/bin
+
+# pnpm
+set -gx PNPM_HOME "/Users/mkzero/Library/pnpm"
+if not string match -q -- $PNPM_HOME $PATH
+  set -gx PATH "$PNPM_HOME" $PATH
+end
+# pnpm end
